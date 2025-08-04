@@ -1,0 +1,117 @@
+
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+    background-color: #ab4ae4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #8c52ff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 1);
+    width: 300px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 50px 12px 20px;
+    border: none;
+    border-radius: 999px; /* full pill */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.input-wrapper input:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.input-wrapper button {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    padding: 10px 14px;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(78, 0, 196, 0.6);
+    transition: all 0.3s ease;
+}
+
+.input-wrapper button:hover {
+    background: linear-gradient(135deg, #9b4dff, #6930c3);
+    box-shadow: 0 0 15px rgba(156, 0, 255, 0.7), 0 0 5px rgba(255, 255, 255, 0.3);
+    transform: translateY(-50%) scale(1.05);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(155, 0, 255, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(155, 0, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(155, 0, 255, 0.4);
+    }
+}
+
+.input-wrapper button:hover {
+    animation: pulse 1s infinite ease-in-out;
+}
+
+
+.unit-toggle {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.unit-toggle button {
+    background-color: #ffffff;
+    color: #6a00ff;
+    border: none;
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.unit-toggle button:hover {
+    background-color: #f3e9ff;
+    transform: scale(1.05);
+}
+

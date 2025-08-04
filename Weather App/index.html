@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <div class="input-wrapper">
+                <input type="text" id="city" placeholder="Enter city name" required>
+                <button id="searchBtn" title="Search">
+                    🔍
+                </button>
+            </div>
+        </div>
+            
+        <div class="unit-toggle">
+        <button id="unitToggle">Show in °C</button>
+        </div>
+
+        <div id="weatherInfo">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="windSpeed"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
